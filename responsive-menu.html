@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,900" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet"> 
+		 
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="dist/slicknav.css">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+		
+    </head>
+<title>Demo</title>
+    <body>
+<style>
+body{font-family: 'Raleway', sans-serif;}
+header{padding:20px; float:left; width:100%; color:#fff; background-color:#000;}
+header .head_title{float:left; width:100%;}
+header .head_title h1{ margin:10px 0; font-family: 'Bowlby One', cursive; text-align:center;}
+ul{list-style:none; padding:0; margin:0;}
+header .head_menu{width:100%; text-align:center; display:block; margin:20px 0;}
+header .head_menu ul li{display:inline; }
+header .head_menu ul li a{text-decoration:none; color:#fff; font-size:16px; letter-spacing:0.75px;padding:15px;}
+header .head_menu ul li:hover a{color:#000; background-color:#fff;}
+header .head_menu ul li.active a{color:#000; background-color:#fff;}
+.mobile_menu{display:none;}
+
+@media only screen and (max-width:767px){
+header{position:relative;}
+header .head_menu{margin:0 auto;}
+.head_menu ul{display:none;}
+header .head_title{float:none;}
+header .head_title h1{font-size:24px;}
+.mobile_menu{display: block;left: 0;position: absolute;text-align: right;top: 30px;width: 100%;}
+.mobile_menu a{ text-decoration:none; color:#fff;}
+}
+</style>
+<header>
+	<div class="container">
+		<div class="col-md-4 col-sm-4">
+			<div class="head_title">
+				<h1>Accounting</h1>
+			</div>
+		</div>
+		<div class="mobile_menu">
+			<div class="col-md-2 col-sm-2">
+			<ul id="menu">
+    		<li>Parent 1
+        <ul>
+            <li><a href="#">item 3</a></li>
+            <li>Parent 3
+                <ul>
+                    <li><a href="#">item 8</a></li>
+                    <li><a href="#">item 9</a></li>
+                    <li><a href="#">item 10</a></li>
+                </ul>
+            </li>
+            <li><a href="#">item 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">item 1</a></li>
+    <li>non-link item</li>
+    <li>Parent 2
+        <ul>
+            <li><a href="#">item 5</a></li>
+            <li><a href="#">item 6</a></li>
+            <li><a href="#">item 7</a></li>
+        </ul>
+    </li>
+</ul>
+
+			</div>
+		</div>
+		<div class="col-md-8 col-sm-8">
+			<div class="head_menu">
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				</div>
+		</div>
+	</div>
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="dist/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>
